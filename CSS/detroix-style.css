@@ -8,7 +8,7 @@ ul {
     width: fit-content;
     margin: -55px;
     margin-bottom: 35px;
-    margin-left: 45%;
+    margin-left: 44.5%;
     padding: 7px;
 }
 
@@ -37,7 +37,7 @@ li a {
 
 /* logo */
 .imageBanner {
-    width: 23%;
+    width: 17%;
     height: 95px;
     margin-top: 60px;
     margin-left: 12%;
@@ -74,7 +74,7 @@ li a {
     display: inline;
     text-decoration: none;
     font-size: x-small;
-    margin-left: 43%;
+    margin-left: 42%;
 }
 
 .sitenav a {
@@ -101,62 +101,68 @@ li a {
 /* grey circles */
 
 .imageMain {
-    width: 70%; 
+    width: 61.5%; 
     height: 514px;
     border-radius: 8px;
     background-image: url("../media/Think.png");
-    background-size: contain;
-    margin-left: 12%;
+    background-size: cover;
+    margin-left: 13.5%;
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     position: absolute;
     border-radius: 50%;
     background-color: #808080;
-    margin-left: 47%;
-    margin-top: 5px;
+    margin-left: 44%;
+    margin-top: 7px;
 }
 
 .circle:nth-child(2) { 
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     position: absolute;
     border-radius: 50%;
     background-color: #808080;
-    margin-left: 49%;
+    margin-left: 46%;
 }
 
 .circle:nth-child(3)  {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     position: absolute;
     border-radius: 50%;
     background-color: #808080;
-    margin-left: 51%;
+    margin-left: 48%;
 }
 
 /* end of grey circles */
 
 
 
-/* Blog Post begins */
+/* Blog Posts begins */
 
 .flexMain {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-left: 10%;
-    margin-right: 15%;
+    margin-right: 16%;
 }
 
 
 .infoPost {
     border-top: 2px solid #a9a9a9;
-    border-right:2px solid #a9a9a9;
+    border-left: none; 
+    border-right:none;
     font-size: xx-large;
+}
+
+.infoPost:nth-child(2) {
+    border-left: 2px solid #a9a9a9;
+    border-right: 2px solid #a9a9a9;
 }
 
 .infoPost img {
@@ -165,20 +171,20 @@ li a {
 
 .infoPost p {
     font-size: medium;
-    margin-left: 12px;
+    margin-left: 14px;
     padding: 5px;
     color: #a9a9a9;
 }
 
 .infoPost h2 {
-    margin-left: 12px;
+    margin-left: 25px;
 }
 
 button {
     background-color: #0b0b31;
     color: #f0ffff;
     margin-left: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 12px;
     border-radius: 6px;
     &:hover {
@@ -189,25 +195,180 @@ button {
 
 /* end of blog post */
 
-.flexMain2 {
-    width: fit-content;
+
+
+/* beginning of Ending section */
+
+.bottomInfo {
+    width: 100%;
     position: absolute;
+    display: flex;
+    flex-direction: row;
     background-color: #0b0b31;
-    margin: 0;
+    margin: -10px;
+}
+ 
+
+/* Services section */
+.closerOne {
+    width: 550px;
 }
 
-.closerBlog {
-
+.closerOne ul {
+   width: 74%;
+   margin: 0px;
+   margin-left: 30%;
+   padding: 0px;
 }
 
-.closerBlog h3 {
+.closerOne li {
+    list-style-image: url("../media/gear3.jpg");
+    display: list-item;
+    color: #a9a9a9;
+    font-size: medium;
+    margin-bottom: 22px;
+    width: 83%;
+}
+
+.closerOne h3 {
+    width: 53.5%;
+    color: white;
+    font-size: xx-large;
+    margin-left: 150px;
+}
+
+.buttonOne {
+    margin-left: 170px;
+    background-color: #213349;
+}
+/* end of Services Secion */
+
+
+/* Opportunities section */
+
+.closerTwo {
+     width: 400px
+}
+
+.closerTwo h3 {
+    width: 52%;
+    color: white;
+    font-size: xx-large;
+}
+
+.closerTwo ul {
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.closerTwo li {
+    list-style-image: url("../media/image.png");
+    display: list-item;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+.closerTwo p {
+    color: #a9a9a9;
+    margin-top: -26px;
+    margin-bottom: 40px;
+    width: 300px;
+}
+
+.buttonTwo {
+    background-color: #213349;
+}
+
+/* end of Opportunities section */
+
+
+
+/* News Section */
+
+.flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.closerThree h3 {
+    color: white;
+    font-size: xx-large;
+    width: 100px;
+}
+
+.closerThree ul {
+    color: #a9a9a9;
+    margin: 0px;
+    /* margin-left: 95px; */
+    
+}
+
+.closerThree li {
+    margin-top: 20px;
+}
+
+.closerThree p {
+    color: #a9a9a9;
+}
+
+.dateOne {
+    background-color: #be8542 ;
+    color: white;
+    width: 50px;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.dateTwo {
+    background-color: #be6043 ;
+    color: white;
+    width: 50px;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.dateThree {
+    background-color: #bd4260 ;
+    color: white;
+    width: 50px;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: x-large;
+    text-align: center;
+}
+
+strong {
     color: white;
 }
 
-.closerBlog p {
-    color: #a9a9a9;
+
+
+
+
+
+
+
+
+
+.buttonThree {
+    margin-left: 105px;
+    background-color: #213349;
 }
 
-.service {
-    color: #a9a9a9;
+
+
+footer {
+    background-color: #0e1e31;
+    color: white;
 }
